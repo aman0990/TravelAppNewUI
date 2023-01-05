@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Pebble Login </title>
+<SCRIPT LANGUAGE="JavaScript">
+function dil(form)
+{
+  for(var i=0; i<4; i++)
+   {
+        if(!isNaN(form.elements[i].value))
+		{
+		   alert("This Field must be Char's")
+		   form.elements[i].value=""	
+		   form.elements[i].focus()
+		   return false
+		}
+   } 
+   
+	if(!isNaN(document.F1.phone.value))
+   {
+	   if(document.F1.phone.value >9999999999 )
+	   {
+		 alert("enter valid phone number")
+		 document.F1.phone.value=""
+		 document.F1.phone.focus()
+         return false   
+	   }
+   }
+   else
+   {
+       alert("This  field  must  be  number")
+	   document.F1.phone.value=""
+	   return false
+   }
+   for(var i=0; i<form.elements.length; i++)
+   {
+		if(form.elements[i].value == "")
+		{
+		   alert("Fill out all Fields")
+		   document.F1.username.focus()
+		   return false
+		}
+   }
+
+   
+
+   return true   
+   }
+</SCRIPT>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Online Banking ..</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function ctck()
+{
+var sds = document.getElementById("dum");
+
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="top_links">
+  
+
+<div id="header">
+	<h1>Pebble Login System<span class="style1"></span></h1>
+	<h1>Pebble Travels<span class="style1"></span></h1>
+    <h2>Your Professional Banking Partner</h2>
+    <A href="index.html"><IMG SRC="RajBankLogo3.jpg" alt="Business"width="80" height="40"></IMG></A>	
+</div>
+
+<div id="navigation">
+    <ul>
+    <li></li>
+	<li><a href="index.html">HOME</a></li>
+    <li><a href="create1.html">NEW CUSTOMER</a></li>
+    <li><a href="Home.html">ABOUT US</a></li>
+    </ul>
+</div>
+
+
+
+<table style="width:897px; background:#FFFFFF; margin:0 auto;">
+<tr >
+	<td width="350" valign="top" style="border-right:#666666 2px dotted;"><br>
+    	<div id="services"><h1>Services</h1><br>
+		    <ul>
+        	<li><a href="#">NetBanking</a></li>
+            <li><a href="#">Loan</a></li>
+            <li><a href="#">Credit Card</a></li>
+            </ul>
+			
+       </div>
+	</td>
+    
+    <td width="1200" valign="top">
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>NEW CUSTOMER FORM</h1><br>
+    	    <table  align="center" bgcolor="white">
+		<tr>
+			
+		</tr>
+		<tr>
+			<td>
+				<form name=F1 onSubmit=" dil(this)" action="register.jsp" >
+				  <table cellspacing="5" cellpadding="3">	
+				
+					<tr><td>USER ID:</td><td> <input type="text" name="username"/></td></tr>
+					<tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
+					<tr><td>CUSTOMER TYPE:</td><td> <input type="text" name="ctype"/></td></tr>
+					<tr><td>NAME:</td><td> <input type="text" name="name"/></td></tr>
+					<tr><td>AGE:</td><td> <input type="text" name="age"/></td></tr>
+					<tr><td>ADDRESS:</td><td> <input type="text" name="add"/></td></tr>
+					<tr><td>CONTACT NO:</td><td> <input type="text" name="phone"/></td></tr>
+					<tr><td>EMAIL ID:</td><td> <input type="text" name="mail"/></td></tr>
+					<!-- Gender:<br/><br/>
+					Male<input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female"/><br/><br/> -->
+					
+					<tr><td></td><td><input type="submit" value="Submit"/>
+					
+					<INPUT TYPE=RESET VALUE="CLEAR"></td></tr>
+					</table>
+               		</form>
+			</td>
+		</tr>
+	
+	</table>
+    	   </div>      
+    </td>
+    
+   <td width="299" valign="top">
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>Welcome</h1><br>
+    	    <center><img src="RajBankLogo2.jpg" alt="Business"width="190" height="70"></center><br>
+		    <p>Each people plan their site layouts depending upon their business type. Here comes a free designer template which provides you with a selection of different kinds of webdesign   starting from business template, fashion template, media template, Science template, Arts template and much more.</p>
+	    	
+	    </div>      
+    </td>
+             	
+    
+</tr></table>
+    
+<div id="footer_top">
+  <div id="footer_navigation">
+  
+
+  </div>
+  
+  <div id="footer_copyright" >
+ 
+    	    <center><img SRC="RajBankLogo3.jpg" alt="Business"width="120" height="40"></center><br>
+		    <p>Each people plan their site layouts depending upon their business type. Here comes a free designer template which provides you with a selection of different kinds of webdesign   starting from business template, fashion template, media template, Science template, Arts template and much more.</p>
+	  
+  Copyright © RajBank</div>
+</div>
+
+<script type="text/javascript">
+document.onload = ctck();
+</script>
+</div>
+
+</body>
+</html>
